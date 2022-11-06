@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 @RestController
 @RequestMapping("/autorizacion")
+@CrossOrigin
 public class AutorizacionController {
     @Autowired
     AutorizacionService autorizacionService;
@@ -23,6 +24,5 @@ public class AutorizacionController {
         aut.setHorasExtra(Integer.valueOf(h));
         autorizacionService.guardarAutorizacion(aut);
         return "Recibido";
-
     }
 }
