@@ -22,4 +22,10 @@ public class AutorizacionEntity {
     private LocalDate fechaHoraExtra; // Ejemplo de tipo de dato LocalDate: 2022-09-11
     private String rutEmpleado;
     private float horasExtra;
+
+    public AutorizacionEntity(LocalDate fechaHoraExtra, String rutEmpleado, float horasExtra) {
+        this.fechaHoraExtra = fechaHoraExtra;
+        this.rutEmpleado = rutEmpleado;
+        this.horasExtra = horasExtra;
+    }
 }
